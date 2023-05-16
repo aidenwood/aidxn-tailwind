@@ -55,6 +55,8 @@
       flex-direction: column
     }
     
+    @media only screen and (max-width: 468px) #meridianContainer { display: hidden; !important }
+	  
     @media only screen and (max-width: 768px) #heroHead { font-size: 24pt; !important }
 
     
@@ -214,7 +216,7 @@
 <section class="bg-black text-white px-8 lg:px-16 py-32 lg:py-16">
     <div class="mx-auto max-w-full">
       <div class="flex flex-wrap-reverse flex-row items-center justify-center">
-        <div class="w-full lg:w-3/4 mb-4 pr-2 xl:pr-8">
+        <div class="w-3/4 mb-4 pr-2 xl:pr-8">
           <a class="inline-block mb-6 text-3xl font-bold leading-none">
             <!-- Aidxn header bubbles -->
             <svg class="w-auto h-12" viewBox="0 0 73 49" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -255,7 +257,7 @@
             </form>
         </div>
 
-        <div class="w-full lg:w-1/4 flex justify-center">
+        <div id="meridianContainer" class="w-1/4 flex justify-center">
           <div class="w-full">
 
             <div id="animationWrapper" translate="no">
